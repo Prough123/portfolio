@@ -1,0 +1,21 @@
+.myskillsBlock {
+  height: 100vh;
+  background-color: #80a545;
+}
+.skillsContainer {
+  background-color: darkolivegreen;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  background-color: blueviolet;
+}
+
+.skills {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
