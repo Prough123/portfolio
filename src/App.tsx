@@ -5,11 +5,12 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Skills from "./components/MySkills/MySkills";
 import Projects from "./components/Projects/Projects";
 import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
     return (
-        <div >
+        <div>
             <Header/>
             <main className={style.main}>
                 <AboutMe/>
@@ -17,9 +18,7 @@ function App() {
                 <Projects/>
                 <Contacts/>
             </main>
-            <footer>
-
-            </footer>
+            <Footer/>
         </div>
     );
 }

@@ -1,16 +1,20 @@
 import React from 'react'
+import styleContainer from "../common/styles/Container.module.scss";
+import style from "../Footer/Footer.module.scss";
+import Socials from "./Socials/Socials";
 
 
 const Footer = () => {
     return (
-        <div>
-            <nav>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Скиллы</a></li>
-                <li><a href="">Работы</a></li>
-                <li><a href="">Контакты</a></li>
-            </nav>
-        </div>
+        <footer>
+            <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+                <h2 className={style.title}>Илья Божок</h2>
+                <div className={style.contacts}>
+                    <Socials/>
+                </div>
+               <span>2019 Все права защищены</span>
+            </div>
+        </footer>
     )
 }
 
