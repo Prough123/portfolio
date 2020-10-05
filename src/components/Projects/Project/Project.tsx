@@ -9,9 +9,12 @@ export type SkillType = {
 const Project = (props:SkillType) => {
     return (
         <div className={style.project}>
-            <button>Смотреть</button>
+            <div className={style.blockImg}>
+                <button>Смотреть</button>
+            </div>
             <h3>{props.title}</h3>
             <span className={style.description}>{props.description}</span>
+
         </div>
     )
 }

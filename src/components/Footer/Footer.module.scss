@@ -1,0 +1,21 @@
+.footerBlock {
+  background-color: #8a9128;
+}
+.footerContainer {
+  background-color: #d9694b;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  background-color: blueviolet;
+}
+
+.contacts {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}

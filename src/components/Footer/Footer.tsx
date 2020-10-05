@@ -6,8 +6,8 @@ import Socials from "./Socials/Socials";
 
 const Footer = () => {
     return (
-        <footer>
-            <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+        <footer className={style.footerBlock}>
+            <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2 className={style.title}>Илья Божок</h2>
                 <div className={style.contacts}>
                     <Socials/>
