@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './Project.module.scss'
+import arrowDown from '../../../img/arrowDown.svg'
 
 export type SkillType = {
     title: string
@@ -10,10 +11,11 @@ const Project = (props:SkillType) => {
     return (
         <div className={style.project}>
             <div className={style.blockImg}>
-                <button>Смотреть</button>
+                <div className={style.title}>{props.title}</div>
             </div>
-            <h3>{props.title}</h3>
-            <span className={style.description}>{props.description}</span>
+            <p className={style.description}>{props.description}
+                <img src={arrowDown} alt=""/>
+            </p>
 
         </div>
     )

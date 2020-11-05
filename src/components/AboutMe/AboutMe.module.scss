@@ -1,6 +1,93 @@
 .aboutMeBlock {
+}
+
+
+.wrapperBackground{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 75%;
+  margin: 0 auto;
+
+}
+.container {
   height: 100vh;
-  background-color: coral;
+  display: grid;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  grid-gap: 1px;
+  grid-template:
+  "home skills" 1fr
+   "about photo" 1fr
+   "projects contacts" 1fr
+  / 1fr 1fr;
+
+
+
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  a{
+    padding: 71px 0 0 20px;
+  }
+  .block{
+    align-self: flex-end;
+    padding: 0 30px 30px 0;
+  }
+}
+
+
+.itemHome {
+  grid-area: home;
+}
+
+.itemSkills {
+  grid-area: skills;
+}
+
+.itemAboutMe {
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+
+  .specialization{
+    font-weight: normal;
+    font-size: 85px;
+    text-transform: uppercase;
+    padding: 0 0 0 20px;
+  }
+  .initials{
+    font-size: 60px;
+    align-self: flex-end;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 30px 40px 0 0;
+  }
+}
+
+.itemProjects {
+  grid-area: projects;
+  background-color: white;
+}
+
+.itemContacts {
+  grid-area: contacts;
+  background-color: white;
+}
+
+.itemPhoto {
+  grid-area: photo;
+  padding: 10px;
+  background-color: white;
+}
+
+.photo{
+  width: 100%;
+  height: 472px;
+  background-color: #fff;
+  background-image: url(../.././img/photo.jpg);
 }
 
 .text {
@@ -8,8 +95,3 @@
   background-color: #b1a5a5;
 }
 
-.photo {
-  width: 300px;
-  height: 400px;
-  background-color: #fff;
-}

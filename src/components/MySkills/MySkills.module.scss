@@ -1,21 +1,33 @@
-.myskillsBlock {
-  background-color: #80a545;
-}
+
 .skillsContainer {
-  background-color: darkolivegreen;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: grid;
+  grid-template:
+  "nameBlock"300px
+  "skills"1fr
+  / 1fr
+
 }
 
-.title {
-  background-color: blueviolet;
+.nameBlock {
+  grid-area: nameBlock;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.navMenu {
+  display: flex;
+  padding: 0 0 76px 20px;
+}
+.descrBlock{
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  color: #000000;
 }
 
 .skills {
-  border: 1px solid black;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
+  grid-area: skills;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
+

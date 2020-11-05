@@ -1,20 +1,6 @@
-.projectsBlock {
-  background-color: #f1376e;
-}
-.projectsContainer {
-  background-color: #022d19;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.title {
-  background-color: blueviolet;
-}
-
-.projects {
-  border: 1px solid black;
-  width: 100%;
+.projects{
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap
+
 }

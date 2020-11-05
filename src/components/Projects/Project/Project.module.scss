@@ -1,20 +1,27 @@
 .project {
-  width: 700px;
-  background-color: #4275c7;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 10px;
+  width: 50%;
+  padding: 40px;
 }
 
-.blockImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  background-color: red;
+.title{
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
 }
 
+.description{
+  display: flex;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 140%;
+
+  letter-spacing: 0.015em;
+
+  color: #000000;
+  img{
+    align-self: flex-end;
+  }
+}
